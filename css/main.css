@@ -1,0 +1,991 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #0000;
+  font-size: 3em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #DEE1FA;
+  text-shadow: none;
+}
+
+::selection {
+  background: #DEE1FA;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #DDD5D0;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+
+
+
+/*Links Button */
+.button-53 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-53:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+/* End Links button */
+
+
+
+/* Skills buttons */
+.button-52 {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 30px;
+  box-shadow: #000000 4px 4px 0 0;
+  color: #000;
+  display: inline-block;
+  font-family: "Poiret One", sans-serif;;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.button-52 {
+  text-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .button-52 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+
+
+/* End Skills buttons */
+
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-size: 1em;
+ font-family: "Poiret One", serif;
+ font-weight: 400;
+ font-style: normal;
+  color: #0000;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0000;
+  text-decoration: none;
+}
+
+.features-item-description {
+  font-size:medium;
+}
+
+h1{
+  font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  color: #000;
+}
+
+h2 {
+  font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.875em;
+  color:#000;
+}
+
+
+h3,
+h4 {
+  font-family: "Poiret One", serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+  color:#000;
+}
+
+h5 {
+  font-family: "Poiret One", serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin: 20px 0;
+  text-justify: auto;
+  color:#000;
+}
+
+p{
+  font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5em;
+  color:#000;
+}
+
+img{
+ width:100%;
+ border-radius: 8px;
+}
+
+figure{
+  margin: 0;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+  color:#0000;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+/* Header is the links on top section */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 80px;
+  background-color: #effe8b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  background: #000;
+  min-height: 100vh;
+}
+
+
+.center,.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+header .content-wrapper {
+  margin: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
+}
+
+.header-divider {
+  background: #effe8b;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+  font-size: 3em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 0.45em;
+  word-spacing:30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #effe8b;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  
+}
+
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area = the Hi I'm Kelly section */ 
+
+.hero-area {
+  background-color: #f4ffa9;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-area h1 {
+  font-size: 1em;
+  font-family: "La Belle Aurore", serif;
+  font-weight: 500;
+  line-height: 1.2;
+  text-justify:none ;
+  text-align: left;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Aside = Skills Section */
+
+aside {
+  background-color: #effe8b;
+  display: flex;
+  justify-content:center;
+  text-align: left;
+  
+}
+aside .content {
+  align-content: left;
+}
+.aside h2 {
+  margin-bottom: 60px;
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    color:#000;
+    justify-content: left;
+  }
+
+  
+aside .form {
+  margin-top: 30px;
+  justify-content: left;
+}
+
+/*Makes the 2 columns needed */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 50px;
+  justify-content: left;
+}
+
+/*input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #0000;
+  font-style: italic;
+  padding: 1em;
+} */
+
+
+/*input[type=button] {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "Poiret One", serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: #0000;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+} */
+
+/* Features = Projects section*/
+
+
+.features {
+  background-color:#f4ffa9;
+  display:flex;
+  justify-content:center;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    color:#000;
+  }
+  
+
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.features .content-wrapper{
+  text-align: left;
+}
+.features i {
+  font-size: 5.75em;
+  margin-bottom: 40px;
+} /* new add */ 
+
+.features p {
+  text-align: left;
+  margin: 0;
+  line-height: 2;
+
+}
+.features h1{
+  text-wrap: wrap;
+  text-align: left;
+}
+
+/* Reviews = about me section*/
+
+.reviews {
+  background-color:  #effe8b;
+  display: flex;
+  justify-content:center;
+  text-align: left;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+ font-family: "La Belle Aurore", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3em;
+      color:#000;
+    }
+    
+
+.reviews img {
+  height: 120px;
+  width: 200px;
+  display:flex;
+  justify-content:center;
+  border-radius: 8px;
+  
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+  color:#000;
+}
+
+.reviews h4{
+  font-family: "La Belle Aurore", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  color:#000;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    color:#000;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    color:#000;
+  }
+
+  /* Header */
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+ 
+  header figure {
+    width: 30%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+    color:#f4ffa9;
+  }
+
+  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  aside h2 {
+    font-family:"La Belle Aurore", serif;
+  }
+
+  /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    
+  }
+
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
+  } /*new add */
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+    color:#000;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer .social-icons p {
+    background-color: #effe8b;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .social-icons p i {
+    font-size: 1.3125em;
+    color:#000;
+  }
+  
+  footer .copyright {
+    width: 100%;
+  }
+
+
+@media only screen and (min-width:1200px) {}
+  /*Desktop styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 80px 0;
+   
+  }
+  h2 {
+    font-size: 2.25em;
+    color:#000;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+    color:#000;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+    color:#000;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+    color:#000;
+  }
+  .hero-area{
+    justify-items: left;
+  }
+
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%; }
+
+  .form-description p {
+    font-size: 1.125em;
+    color:#000;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+    color:#000;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+
+
+  /* Reviews */
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+  .reviews img {
+    height:400px;
+    width: 330px;
+  }
+  footer h4 {
+    font-size: 2.2em;
+    font-family:"La Belle Aurore", serif;
+    color:#000;
+  }
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #effe8b;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
