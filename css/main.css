@@ -172,10 +172,6 @@ textarea {
     padding: 0 25px;
   }
 }
-
-
-
-
 /* End Skills buttons */
 
 
@@ -377,7 +373,28 @@ footer .social-icons p {
   
 }
 
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:#000;
+}
 
+footer .social-icons p {
+  background-color: #effe8b;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#000;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+  color:#000;
+}
 footer .copyright {
   margin: 20px 0;
 }
@@ -397,10 +414,13 @@ footer .copyright {
   font-family: "La Belle Aurore", serif;
   font-weight: 500;
   line-height: 1.2;
-  text-justify:none ;
+  text-justify:left ;
   text-align: left;
 }
 
+.hero-area h2{
+  padding:20px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -421,7 +441,8 @@ aside {
 aside .content {
   align-content: left;
 }
-.aside h2 {
+
+aside .content-wrapper h2 {
   margin-bottom: 60px;
     font-family: "La Belle Aurore", serif;
     font-style: normal;
@@ -431,11 +452,11 @@ aside .content {
     justify-content: left;
   }
 
-  
 aside .form {
   margin-top: 30px;
   justify-content: left;
 }
+
 
 /*Makes the 2 columns needed */
 .row {
@@ -444,31 +465,11 @@ aside .form {
 
 .column {
   flex: 50%;
-  padding: 50px;
+  padding:50px;
   justify-content: left;
+  width:80%;
 }
 
-/*input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #0000;
-  font-style: italic;
-  padding: 1em;
-} */
-
-
-/*input[type=button] {
-  width: 100%;
-  padding: 20px;
-  margin-top: 20px;
-  font-family: "Poiret One", serif;
-  font-weight: 500;
-  font-size: 2em;
-  color: #0000;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-} */
 
 /* Features = Projects section*/
 
@@ -514,6 +515,7 @@ aside .form {
   text-align: left;
   margin: 0;
   line-height: 2;
+  color:#000;
 
 }
 .features h1{
@@ -528,8 +530,14 @@ aside .form {
   display: flex;
   justify-content:center;
   text-align: left;
+  color:#000;
 }
 
+.reviews p {
+      color:#000;
+      padding:10px;
+    }
+    
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -722,22 +730,27 @@ aside .form {
     align-content: flex-start;
   }
 
-  aside .content-wrapper .form-description,
+  aside .content-wrapper ,.form-description
   aside .content-wrapper .form {
     width: 40%;
-    margin: 0;
   }
 
-  aside h2 {
+  .aside h2 {
     font-family:"La Belle Aurore", serif;
+    color: #000;
   }
+
 
   /* Features */
 
   .features h2 {
     margin-bottom: 20px;
+    color:#000;
   }
-
+  
+.features p{
+  color:#000;
+}
   .features article {
     display: flex;
     align-items: center;
@@ -804,6 +817,7 @@ aside .form {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color:#000;
   }
   
   footer .social-icons p {
@@ -814,6 +828,7 @@ aside .form {
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#000;
   }
   
   footer .social-icons p i {
@@ -868,17 +883,21 @@ aside .form {
 
 
   /* Aside */
-  aside .content-wrapper {
-    justify-content: space-around;
-  }
+ 
 
-  aside .content-wrapper .form-description,
+  aside .content-wrapper , .form-description 
   aside .content-wrapper .form {
-    width: 40%; }
+    width: 4%; }
 
   .form-description p {
     font-size: 1.125em;
     color:#000;
+  }
+
+  aside h2{
+    margin-bottom: 20px;
+    color:#000;
+    font-size: 3em;
   }
 
   /* Features */
@@ -886,6 +905,9 @@ aside .form {
   .features h2 {
     width: 90%;
     color:#000;
+    font-family: "La Belle Aurore", serif;
+    font-weight: 500;
+    line-height: 1.2;
   }
 
   .features article {
@@ -913,7 +935,29 @@ aside .form {
     color:#000;
   }
 
-
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#000;
+  }
+  
+  footer .social-icons p {
+    background-color: #effe8b;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+  }
+  
+  footer .social-icons p i {
+    font-size: 1.3125em;
+    color:#000;
+  }
+ 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
