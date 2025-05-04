@@ -100,41 +100,76 @@ textarea {
 /* General Styles */
 
   /* Nav Bar */ 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #effe8b;
-  overflow: hidden;
-}
+  <html>
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: center;
-  display: block;
-  color: #41403e;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family:"Poiret One", sans-serif;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #41403e;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #effe8b;
-  color: #effe8b;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
+  <head>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+  
+          body {
+              font-family: "Poiret One", sans-serif;
+          }
+  
+          .navbar {
+              display: flex;
+              position: sticky;
+              align-items: center;
+              justify-content: center;
+              top: 0px;
+              background: #effe8b;
+              background-blend-mode: darken;
+              background-size: cover;
+              color: #000;;
+              padding: 10px 20px;
+              font-family: "Poiret One", sans-serif;
+          }
+  
+          .nav-list {
+              display: flex;
+              list-style: none;
+          }
+  
+          .nav-list li {
+              margin-right: 20px;
+          }
+  
+          .nav-list li:last-child {
+              margin-right: 0;
+          }
+  
+          .nav-list li a {
+              text-decoration: none;
+              color: #000;
+              font-size: 18px;
+              transition: color 0.3s ease-in-out;
+          }
+  
+          .nav-list li a:hover {
+              color: #ccc;
+              /* Change the color on hover */
+          }
+  
+          .btn {
+              background-color: #ccc;
+              color: #000;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease-in-out;
+          }
+  
+          .btn:hover {
+              background-color: #000;
+              /* Change the background color on hover */
+              color: #ccc;
+          }
+      </style>
+  </head>
+  
 /*Links Button */
 .button-53 {
   align-self: center;
