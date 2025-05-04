@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Kroeper Fullstack Portfolio</title>
@@ -35,11 +36,21 @@
 
   <!-- Add your site or application content here -->
   <header>
+    <div class="topnav" id="myTopnav">
+      <a href="#header" class="active">Header</a>
+      <a href="#aside">Skills</a>
+      <a href="#features">Projects</a>
+      <a href="#reviews">About</a>
+      <a href="#footer">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+
     <div class="content-wrapper">
       <a href="#">
       </a>
       <div class=”center”>
-       <h1>Kroeper Portfolio</h1> 
+       <h1>Kelly Kroeper's Portfolio</h1> 
        <a href="mailto:kroeper.kelly@gmail.com?subject=Saw your portfolio site">  <button class="button-53" role="button">Connect With Me</button>
 
        </a>
@@ -58,7 +69,7 @@
         
 </div> 
 <div>
-  <img src="../portfolio/img/profilepic.png" alt="profilephoto" border-radius: "8px">
+  <img src="../portfolio/img/profilepic.png" alt="profilephoto" object-fit:contain border-radius: "8px">
 </div>
       </div>
     </section>
@@ -67,8 +78,7 @@
       <div class="content-wrapper">
      <!--   <div class="form-description"> -->
       <h2>Skills</h2>
-      <div class="content-wrapper"></div>
-     <!-- <div class="form-description"></div> -->
+        
 <div class="row">
   <div class="column" style="background: color #f4ffa9;">
     <h2>Developer Skills</h2>
@@ -82,6 +92,8 @@
    <button class="button-52" role="button">Azure AI</button>
    <button class="button-52" role="button">REST API</button>
   </div>
+  </div>
+
   <div class="column" style="background: color #f4ffa9;">
     <h2>Analysis Skills</h2>
     <button class="button-52" role="button">SAS</button>
@@ -93,7 +105,7 @@
     <button class="button-52" role="button">Hadoop/Spark</button>
     <button class="button-52" role="button">Pandas/NumPy</button>
   </div>
-</div>
+
 
 </body>
 </html>
@@ -106,84 +118,101 @@
       <div class="content-wrapper">
        <h2> Projects</h2> 
         <div class="features-items">
+
           <article>
-            <img src= "../portfolio/img/repo.png" alt="repo" width="200" height="200" border-radius: "8px">
+            <a target="_blank" href="https://kellyk907.github.io/repoGallery/"> <img src="../portfolio/img/repo.png" alt="repo" object-fit:contain border-radius: "8px""></a>
             <p class="features-item-description">
             <h1> Github Repo Gallery</h1>
               </p>
-              <a href="https://kellyk907.github.io/repoGallery/">
-               <p>Uses GitHub's API to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.</p> 
-                 
+              <a href="https://kellyk907.github.io/repoGallery/" target="_blank">
+               <p>I used GitHub's API to pull data from my GitHub portfolio and create a gallery of my repos. Visitors to the site can click on the repos to see more details and a link to the repo.</p> 
                <p><b>Skills:</b> JavaScript</p>
                  <p><b>Tools:</b> REST API, GitHub Pages</p>
                  <button class="button-53" role="button">Live Link</button>
+              </article>
 
-          </article>
           <article>
-            <img src="../portfolio/img/guessword.png" alt="guess" width="200" height="200" border-radius: "8px">
+            <a target="_blank" href="https://stickynotes2.netlify.app"> <img src="../portfolio/img/sticky.png" alt="guess" object-fit:contain border-radius: "8px"></a>
             <p class="features-item-description">
-            <h1>Guess The Word</h1>
+            <h1>Sticky Notes</h1>
             </p>
-            <p> Players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their allotted guesses, they win!</p>
-            <p> <b>Skills: </b>Manipulate the DOM, Vanilla JavaScript</p>
-            <p><b>Tools:</b> Github</p>
-            <a href="https://kellyk907.github.io/guess-the-word/">
+            <p> Created an interactive app that will let users create “sticky notes” on their computer. The app uses lifecycle methods to allow users to create, add,search, make note lists and delete notes.</p>
+            <p> <b>Skills: </b>ES6, JSX, Managing data flow, Manipulating the DOM</p>
+            <p><b>Tools:</b> Netlify,CodeSandbox</p>
+            <a href="https://stickynotes2.netlify.app" target="_blank">
               <button class="button-53" role="button">Live Link</button>
           </article>
+
           <article>
-            <img src="../portfolio/img/clean.png" alt="clean" width="200" height="200" border-radius: "8px";>
+            <a target="_blank" href="https://squeakyclean3.netlify.app"> <img src="../portfolio/img/clean.png" alt="clean" object-fit:contain border-radius: "8px"> </a>
             <p class="features-item-description">
               <h1>Squeaky Clean </h1>
             </p> 
-            <p>Greenfield project creating a laundromat web app.That lets users read the important information using tabs which allows for a better user experience.
+            <p>A Greenfield project to create a laundromat web app.That lets users read the important information using tabs which allows for a better user experience.
               <p><b>Skills:</b> React, JSX, Components</p>
-              <p><b>Tools:</b>CodeSandbox</p>
-            <a href="https://squeakyclean3.netlify.app">
+              <p><b>Tools:</b>CodeSandbox, Netlify</p>
+            <a href="https://squeakyclean3.netlify.app" target="_blank">
               <button class="button-53" role="button">Live Link</button>         
           </article>
+
           <article>
-            <img src="../portfolio/img/magic.png" alt="magic" width="200" height="200" border-radius: "8px">
+            <a target="_blank" href="https://kellyk907.github.io/magicalg/"> <img src="../portfolio/img/magic.png" alt="magic" object-fit:contain border-radius: "8px"></a>
             <p class="features-item-description">
               <h1>Magical Getaways</h1>
             </p>
-            <p>A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.
-              <p><b>Skills:</b> HTML, CSS, Flexbox</p> 
+            <p>Magical Getaways is a multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.</p>
+              <p><b>Skills:</b> CSS3, Flexbox, HTML5, Media Queries, Responsive Typography</p> 
               <p><b>Tools:</b> Chrome DevTools, GitHub Pages</p>
-            <a href="https://kellyk907.github.io/magicalg/">
+            <a href="https://kellyk907.github.io/magicalg/" target="_blank">
               <button class="button-53" role="button">Live Link</button>
           </article>
+
           <article>
-          <img src = "../portfolio/img/prison.png" alt="prison" width="200" height="200" border-radius: "8px">
+          <a target="_blank" href="https://github.com/kellyk907/titanic"><img src = "../portfolio/img/titanic.png" alt="prison" object-fit:contain border-radius: "8px"></a>
             <p class="features-item-description">
-              <h1>COVID Prison Project</h1>
+              <h1>Surviving Titanic </h1>
             </p>
-            <p>Used the NumPy library to analyze data on NJ DOC inmates and DOJ staff during COVID using Matplotlib visualizations to compare mortality rates to the general population to examine equity.</p>
+            <p>Used the NumPy library to analyze historical data on RMS Titanic survivors to estimate the probability of an individual’s survival given their demographic data using Matplotlib visualizations.</p>
             
-            <p><b>Skills:</b> Data Analysis, Interpretation,Preparation & Visualization, Matplotlib, Seaborn , Pandas & NumPy Libraries</p>
-            <p><b>Tools:</b>  Replit, Jupyter Notebooks</p>
-            <a href="https://drive.google.com/file/d/15nUI6gqIVSpzP4x6RKdTiTEA9KgMqyc_/view?usp=sharing">
+            <p><b>Skills:</b> Data Analysis, Data Interpretation, Data Preparation, Data Visualization, Matplotlib,Seaborn,Pandas & NumPy Libraries</p>
+            <p><b>Tools:</b>  Replit</p>
+            <a href=" https://github.com/kellyk907/titanic" target="_blank">
               <button class="button-53" role="button">Live Link</button>
-             
-          </article>
+             </article>
+
+             <article>
+              <a target="_blank" href="https://github.com/kellyk907/wagehappy"><img src = "../portfolio/img/happy.png" alt="prison" object-fit:contain border-radius: "8px"></a>
+                <p class="features-item-description">
+                  <h1>Happiness & Hardwork </h1>
+                </p>
+                <p>Examined the correlations between two datasets— hours worked and levels of happiness of different countries—by analyzing data with Pandas, using a third-party API to pull most recent conversion rates, and displaying data in a bubbleplot with Seaborn.</p>
+                
+                <p><b>Skills:</b> Data Analysis, Data Interpretation, Data Preparation, Data Visualization, Matplotlib, Seaborn,Pandas & NumPy Libraries</p>
+                <p><b>Tools:</b> Python, Replit</p>
+                <a href="https://github.com/kellyk907/wagehappy" target="_blank"> 
+                  <button class="button-53" role="button">Live Link</button>
+                 </article>
+
         </div>
       </div>
     </section>
+ 
 
     <section class="reviews">
       <div class="content-wrapper">
      <u><b><h2>About Me</h2></b></u>  
        <article>
-       <figure>
-               <img src="../portfolio/img/profilepic.png" alt="kelly" border-radius: "8px" width="200px" height="400px">             
-  </figure>
+        <div>
+          <img src="../portfolio/img/profilepic.png" alt="profilephoto" object-fit:contain border-radius: "8px">
+        </div>
           <div>
             <p>
-              Hi! I'm Kelly Kroeper MPH,CPH and I am a full-stack web developer thanks to SkillCrush! I have skills in full-stack as well as large data set analysis and visualization. I have an MPH and am board-certified in Public Health(CPH), and have worked on large scale COVID data analysis with BroadStreet Software during the pandemic. As a previous teacher, I am a great communicator, problem solver and team player who works hard to see projects through from development to completion. I am seeking a full-time full-stack web developer position.
+              Hi! I'm Kelly Kroeper MPH,CPH and I am a full stack web developer thanks to SkillCrush! I have skills in full stack as well as large data set analysis and visualization. I have an MPH and am board-certified in Public Health(CPH), and have worked on large scale COVID data analysis with BroadStreet Software during the pandemic. As a previous teacher, I am a great communicator, problem solver and team player who works hard to see projects through from development to completion. I am seeking a full-time full stack web developer position.
             </p>
-            <a href="https://www.credly.com/users/kelly-kroeper/">
+            <a href="https://www.credly.com/users/kelly-kroeper/" target="_blank">
               <button class="button-53" role="button">Credly Certifications</button>
         </a>
-        <a href="https://nbphe.connect.prolydian.com/cph-search">
+        <a href="https://nbphe.connect.prolydian.com/cph-search" target="_blank">
           <button class="button-53" role="button">Public Health Board Certification</button>
     </a>
         </div>
@@ -198,11 +227,7 @@
       <div class="footer-content">
         <div class="contact">
         <b><u><h4>Contact Me</h4></u></b> 
-          <address>
-            <h3>
-              kroeper.kelly@gmail.com
-            </h3>
-          </address>
+        <a href="mailto:kroeper.kelly@gmail.com?subject=Saw your portfolio site">  <button class="button-53" role="button">Email Me</button>
           
       
         </div>
@@ -210,7 +235,7 @@
         <b><u> <h4>Follow Me</h4></u></b> 
         <div class="social-icons">
             <p>
-              <a href="https://www.linkedin.com/kellykr" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/kelly-kr/"target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
             </p>
             
             <p>

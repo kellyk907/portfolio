@@ -88,7 +88,7 @@ textarea {
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #DDD5D0;
+  background: #f4ffa9;
   color: #000;
   padding: 0.2em 0;
 }
@@ -99,7 +99,41 @@ textarea {
 
 /* General Styles */
 
+  /* Nav Bar */ 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #effe8b;
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  display: block;
+  color: #41403e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:"Poiret One", sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #41403e;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #effe8b;
+  color: #effe8b;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
 
 /*Links Button */
 .button-53 {
@@ -153,7 +187,7 @@ textarea {
   box-shadow: #000000 4px 4px 0 0;
   color: #000;
   display: inline-block;
-  font-family: "Poiret One", sans-serif;;
+  font-family: "Poiret One", sans-serif;
   font-weight: 600;
   font-size: 18px;
   padding: 0 18px;
@@ -245,11 +279,13 @@ p{
   font-weight: 500;
   font-size: 5em;
   color:#000;
+  text-justify: left;
 }
 
 img{
  width:100%;
  border-radius: 8px;
+ object-fit: contain;
 }
 
 figure{
@@ -517,6 +553,7 @@ aside .form {
   line-height: 2;
   color:#000;
 
+
 }
 .features h1{
   text-wrap: wrap;
@@ -550,8 +587,7 @@ aside .form {
     
 
 .reviews img {
-  height: 120px;
-  width: 200px;
+  object-fit: contain;
   display:flex;
   justify-content:center;
   border-radius: 8px;
@@ -682,6 +718,20 @@ aside .form {
     line-height: 1.25;
     color:#000;
   }
+/* Nav Bar */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
   /* Header */
   header {
@@ -741,7 +791,7 @@ aside .form {
   }
 
 
-  /* Features */
+  /* Features = Projects*/
 
   .features h2 {
     margin-bottom: 20px;
@@ -766,6 +816,7 @@ aside .form {
   .features i {
     margin-bottom: 30px;
   } /*new add */
+
 
   /* Reviews */
   .reviews article {
@@ -839,9 +890,9 @@ aside .form {
   footer .copyright {
     width: 100%;
   }
+}
 
-
-@media only screen and (min-width:1200px) {}
+@media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
   /* General styles */
@@ -887,7 +938,7 @@ aside .form {
 
   aside .content-wrapper , .form-description 
   aside .content-wrapper .form {
-    width: 4%; }
+    width: 100%; }
 
   .form-description p {
     font-size: 1.125em;
@@ -898,6 +949,14 @@ aside .form {
     margin-bottom: 20px;
     color:#000;
     font-size: 3em;
+    width: 80%;
+    text-wrap: wrap;
+  }
+
+  aside div{
+    width: 80%;
+    text-wrap: wrap;
+    margin-bottom: 20px;
   }
 
   /* Features */
@@ -926,9 +985,11 @@ aside .form {
     width: 42%;
   }
   .reviews img {
-    height:400px;
-    width: 330px;
+  object-fit: contain;
   }
+
+  /* Footer */
+
   footer h4 {
     font-size: 2.2em;
     font-family:"La Belle Aurore", serif;
@@ -957,7 +1018,7 @@ aside .form {
     font-size: 1.3125em;
     color:#000;
   }
- 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -1033,3 +1094,4 @@ aside .form {
   h3 {
     page-break-after: avoid;
   }
+}
