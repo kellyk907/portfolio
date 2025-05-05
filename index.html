@@ -39,10 +39,11 @@
   <body>
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a id="header">Home</a></li>
+            <li><a id="skills">Skills</a></li>
+            <li><a id="projects">Projects</a></li>
+            <li><a id="about">About</a></li>
+            <li><a id="contact">Contact</a></li>
         </ul>
     </nav>
 </body>
@@ -66,20 +67,22 @@
   </header>
 
   <main>
+    <a id="header">
     <section class="hero-area">
       <div class="content-wrapper">
         <h1>Hi, I'm Kelly Kroeper, <h1>
         <!-- extra space between lines--> 
-          <h2> A full stack developer with skills in data analysis and database management. </h2>
-        
+          <h2> A full stack developer with skills in data analysis and database management. </h2>     
 </div> 
 <div>
   <img src="../portfolio/img/profilepic.png" alt="profilephoto" object-fit:contain border-radius: "8px">
 </div>
       </div>
+    </a>
     </section>
 
     <aside>
+      <div id="skills"></div>
       <div class="content-wrapper">
      <!--   <div class="form-description"> -->
       <h2>Skills</h2>
@@ -119,6 +122,8 @@
       <!-- aside content wrapper ends -->
     </aside>
 
+
+    <div id="projects">
     <section class="features">
       <div class="content-wrapper">
        <h2> Projects</h2> 
@@ -139,11 +144,11 @@
           <article>
             <a target="_blank" href="https://stickynotes2.netlify.app"> <img src="../portfolio/img/sticky.png" alt="guess" object-fit:contain border-radius: "8px"></a>
             <p class="features-item-description">
-            <h1>Sticky Notes</h1>
+            <h1>Super Sticky Notes</h1>
             </p>
             <p> Created an interactive app that will let users create “sticky notes” on their computer. The app uses lifecycle methods to allow users to create, add,search, make note lists and delete notes.</p>
             <p> <b>Skills: </b>ES6, JSX, Managing data flow, Manipulating the DOM</p>
-            <p><b>Tools:</b> Netlify,CodeSandbox</p>
+            <p><b>Tools:</b> Netlify Hosting, CodeSandbox</p>
             <a href="https://stickynotes2.netlify.app" target="_blank">
               <button class="button-53" role="button">Live Link</button>
           </article>
@@ -153,9 +158,9 @@
             <p class="features-item-description">
               <h1>Squeaky Clean </h1>
             </p> 
-            <p>A Greenfield project to create a laundromat web app.That lets users read the important information using tabs which allows for a better user experience.
+            <p>A Greenfield project to create a laundromat web app.The format of the app allows users to read the important information using tabs which allows for a better user experience and easy to navigate format.
               <p><b>Skills:</b> React, JSX, Components</p>
-              <p><b>Tools:</b>CodeSandbox, Netlify</p>
+              <p><b>Tools:</b>Netlify Hosting, CodeSandbox</p>
             <a href="https://squeakyclean3.netlify.app" target="_blank">
               <button class="button-53" role="button">Live Link</button>         
           </article>
@@ -175,12 +180,12 @@
           <article>
           <a target="_blank" href="https://github.com/kellyk907/titanic"><img src = "../portfolio/img/titanic.png" alt="prison" object-fit:contain border-radius: "8px"></a>
             <p class="features-item-description">
-              <h1>Surviving Titanic </h1>
+              <h1>Surviving the Titanic </h1>
             </p>
-            <p>Used the NumPy library to analyze historical data on RMS Titanic survivors to estimate the probability of an individual’s survival given their demographic data using Matplotlib visualizations.</p>
+            <p>Used the NumPy library to analyze historical data on RMS Titanic survivors in order to estimate the probability of an individual’s survival given their demographic data (age, gender, passenger fare) using Matplotlib for data visualizations.</p>
             
-            <p><b>Skills:</b> Data Analysis, Data Interpretation, Data Preparation, Data Visualization, Matplotlib,Seaborn,Pandas & NumPy Libraries</p>
-            <p><b>Tools:</b>  Replit</p>
+            <p><b>Skills:</b> Data Analysis,Interpretation & Visualization, Python Libraries</p>
+            <p><b>Tools:</b> Python, Replit</p>
             <a href=" https://github.com/kellyk907/titanic" target="_blank">
               <button class="button-53" role="button">Live Link</button>
              </article>
@@ -191,8 +196,7 @@
                   <h1>Happiness & Hardwork </h1>
                 </p>
                 <p>Examined the correlations between two datasets— hours worked and levels of happiness of different countries—by analyzing data with Pandas, using a third-party API to pull most recent conversion rates, and displaying data in a bubbleplot with Seaborn.</p>
-                
-                <p><b>Skills:</b> Data Analysis, Data Interpretation, Data Preparation, Data Visualization, Matplotlib, Seaborn,Pandas & NumPy Libraries</p>
+                <p><b>Skills:</b> Data Analysis,Interpretation & Visualization, Python Libraries</p>
                 <p><b>Tools:</b> Python, Replit</p>
                 <a href="https://github.com/kellyk907/wagehappy" target="_blank"> 
                   <button class="button-53" role="button">Live Link</button>
@@ -200,10 +204,13 @@
 
         </div>
       </div>
+    </div>
+  </div>
     </section>
  
 
     <section class="reviews">
+      <div id="about">
       <div class="content-wrapper">
      <u><b><h2>About Me</h2></b></u>  
        <article>
@@ -221,6 +228,7 @@
           <button class="button-53" role="button">Public Health Board Certification</button>
     </a>
         </div>
+      </div>
         </article>
       </div>
     </section>
@@ -228,6 +236,7 @@
   <!-- main wrapper -->
 
   <footer>
+  <div id="contact">
     <div class="content-wrapper">
       <div class="footer-content">
         <div class="contact">
@@ -248,6 +257,7 @@
             </p>
            </div>
         </div>
+      </div>
       </div> 
       <!-- footer content ends -->
     </div>

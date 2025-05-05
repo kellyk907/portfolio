@@ -102,8 +102,6 @@ textarea {
   /* Nav Bar */ 
   <html>
 
-  <head>
-      <style>
           * {
               margin: 0;
               padding: 0;
@@ -167,8 +165,8 @@ textarea {
               /* Change the background color on hover */
               color: #ccc;
           }
-      </style>
-  </head>
+      
+ 
   
 /*Links Button */
 .button-53 {
@@ -315,7 +313,9 @@ p{
   font-size: 5em;
   color:#000;
   text-justify: left;
+  text-align: left;
 }
+  
 
 img{
  width:100%;
@@ -428,6 +428,7 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
+
 }
 
 footer .social-icons {
