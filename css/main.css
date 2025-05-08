@@ -212,7 +212,7 @@ textarea {
 
 
 
-/* Skills buttons */
+/* Skills buttons button-52*/ 
 .button-52 {
   background-color: #fff;
   border: 2px solid #000;
@@ -480,6 +480,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
 }
+
 
 .hero-area h1 {
   font-size: 1em;
@@ -777,6 +778,7 @@ aside .form {
   header .content-wrapper {
     width: 100%;
     justify-content: center;
+  
   }
  
   header figure {
@@ -796,10 +798,12 @@ aside .form {
     color:#f4ffa9;
   }
 
+
   /* Hero Area */
 
   .hero-area {
     min-height: 600px;
+    
   }
 
   .hero-area h1 {
@@ -807,6 +811,12 @@ aside .form {
     line-height: 1;
     margin: 0;
   }
+
+ /* img {
+    transform: scale(0.5);
+  } */
+
+
 
   /* Aside */
   aside .content-wrapper {
@@ -969,12 +979,14 @@ aside .form {
   }
 
 
+
   /* Aside */
  
 
   aside .content-wrapper , .form-description 
   aside .content-wrapper .form {
-    width: 100%; }
+    width: 100%;
+  text-wrap: wrap; }
 
   .form-description p {
     font-size: 1.125em;
@@ -985,14 +997,16 @@ aside .form {
     margin-bottom: 20px;
     color:#000;
     font-size: 3em;
-    width: 80%;
+    width: 100%;
     text-wrap: wrap;
+   
   }
 
   aside div{
-    width: 80%;
+    width: 100%;
     text-wrap: wrap;
     margin-bottom: 20px;
+    justify-content: left;
   }
 
   /* Features */
@@ -1031,7 +1045,9 @@ aside .form {
     font-family:"La Belle Aurore", serif;
     color:#000;
   }
-
+  footer .content-wrapper{
+    padding: 40px;
+  }
   footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -1045,10 +1061,13 @@ aside .form {
     width: 80px;
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     color:#000;
+   
   }
+
+
   
   footer .social-icons p i {
     font-size: 1.3125em;
