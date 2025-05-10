@@ -212,36 +212,6 @@ textarea {
 
 
 
-/* Skills buttons button-52*/ 
-.button-52 {
-  background-color: #fff;
-  border: 2px solid #000;
-  border-radius: 30px;
-  box-shadow: #000000 4px 4px 0 0;
-  color: #000;
-  display: inline-block;
-  font-family: "Poiret One", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-}
-
-.button-52 {
-  text-wrap: wrap;
-}
-@media (min-width: 768px) {
-  .button-52 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
-}
-/* End Skills buttons */
-
-
 html {
   font-size: 1rem;
 }
@@ -285,6 +255,7 @@ h2 {
   font-weight: 500;
   font-size: 1.875em;
   color:#000;
+  text-align: left;
 }
 
 
@@ -344,7 +315,7 @@ address {
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 /* Header is the links on top section */
-header {
+/*header {
   display: flex;
   justify-content: center;
   padding: 80px 0 80px;
@@ -408,7 +379,7 @@ header nav ul {
 header nav ul li {
   font-size: 0.45em;
   word-spacing:30px;
-}
+} */
 
 footer {
   display: flex;
@@ -420,10 +391,12 @@ footer {
 
 footer p {
   margin: 0;
+  background-color: #effe8b;
 }
 
 footer .content-wrapper {
   width: 55%;
+  background-color: #effe8b;
 }
 
 footer .contact {
@@ -469,6 +442,7 @@ footer .social-icons p i {
 }
 footer .copyright {
   margin: 20px 0;
+  background-color: #effe8b;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -488,7 +462,7 @@ footer .copyright {
   font-weight: 500;
   line-height: 1.2;
   text-justify:left ;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-area h2{
@@ -893,7 +867,8 @@ aside .form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-direction:column;
+   
   }
 
   footer .contact {
@@ -908,15 +883,18 @@ aside .form {
   footer p {
     line-height: 1.285;
     color:#000;
+    text-wrap: wrap;
   }
 
   footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     color:#000;
+    flex-direction:row;
+ 
   }
-  
+
   footer .social-icons p {
     background-color: #effe8b;
     border-radius: 50%;
@@ -926,11 +904,14 @@ aside .form {
     justify-content: center;
     align-items: center;
     color:#000;
+    text-wrap: wrap;
+    padding:20px;
   }
   
   footer .social-icons p i {
     font-size: 1.3125em;
     color:#000;
+    
   }
   
   footer .copyright {
