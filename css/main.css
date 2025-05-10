@@ -485,6 +485,28 @@ aside {
   text-align: left;
   
 }
+
+h3 {
+   font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  color:#000;
+  text-justify: center;
+  text-align: center;
+  text-wrap: wra;
+  padding: 20px;
+  display:inline-block;
+  width:68%;
+  margin:5% auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:0.29em;
+  line-height:1.5em;
+  background:#fff;
+  border:dashed 5px #000;
+}
+
+
+
 aside .content {
   align-content: left;
 }
