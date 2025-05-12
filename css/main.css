@@ -205,6 +205,15 @@ p {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
 }
+#contact {
+  font-family: "La Belle Aurore", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #000;
+  text-wrap: wrap;
+  overflow: hidden;
+}
 #copyright {
   font-family: "Poiret One", serif;
   font-style: normal;
@@ -313,6 +322,7 @@ address {
   background-color: #effe8b;
   width: 100%;
   margin: 0px;
+  padding-left: 30px;
 }
 
 .center,
@@ -367,58 +377,22 @@ footer {
   background-color: #effe8b;
 }
 
-footer p {
-  background-color: #effe8b;
-}
-
 footer .content-wrapper {
   width: 100%;
   background-color: #effe8b;
 }
 
-footer .contact {
-  margin-bottom: 50px;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: right;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  color: #000;
-}
-
-footer .social-icons p {
-  background-color: #effe8b;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  color: #000;
-}
-
-
-footer .social-icons p i {
-  font-size: 1.3125em;
-  color: #000;
-}
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
- /* Makes a smooth transition for Nav */
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      scroll-behavior: smooth;
-    }
+/* Makes a smooth transition for Nav */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
+}
+@media {
+  max-width: 767px;
+}
+
 .hero-area {
   background-color: #f4ffa9;
   display: flex;
@@ -479,25 +453,21 @@ h3 {
 }
 
 .skillset {
-  padding:50px; 
-  
+  padding: 50px;
 }
 
-.skillset .content-wrapper{
-padding-inline: 5px;
-justify-content: left;
+.skillset .content-wrapper {
+  padding-inline: 5px;
+  justify-content: left;
 }
 
 /*Makes the 2 columns needed */
 .row {
- display:flex;
- 
-
+  display: flex;
 }
 
 .column {
   flex: 50%;
-  
 }
 
 .features {
@@ -567,20 +537,15 @@ justify-content: left;
   border-radius: 8px;
 }
 
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
-  color: #000;
+footer a {
+  padding-top: 12px;
+  padding-right: 15px;
+  padding-left: 30px;
+  justify-content: center;
 }
-
-.reviews h4 {
-  font-family: "La Belle Aurore", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3em;
-  color: #000;
+footer .social-icons {
+  padding-top: 40px;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -634,7 +599,7 @@ justify-content: left;
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
- /* Makes a smooth transition for Nav */
+  /* Makes a smooth transition for Nav */
   @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
@@ -680,6 +645,9 @@ justify-content: left;
     html {
       scroll-behavior: smooth;
     }
+  }
+  .content-wrapper {
+    max-width: 100%;
   }
 
   /* Header */
@@ -731,19 +699,6 @@ justify-content: left;
     width: 40%;
   }
 
-  .aside h2 {
-    font-family: "La Belle Aurore", serif;
-    color: #000;
-  }
-
-  .features h2 {
-    margin-bottom: 20px;
-    color: #000;
-  }
-
-  .features p {
-    color: #000;
-  }
   .features article {
     display: flex;
     align-items: center;
@@ -779,7 +734,6 @@ justify-content: left;
 
   footer .content-wrapper {
     width: 100%;
-    
   }
 }
 
@@ -790,16 +744,25 @@ footer .footer-content {
   width: 100%;
 }
 
-
 footer .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: #000;
   flex-direction: row;
-  
-
-
+}
+footer a {
+  padding-top: 12px;
+  padding-right: 50px;
+  padding-left: 40px;
+  justify-content: center;
+}
+footer p {
+  padding-left: 18px;
+}
+footer .social-icons {
+  padding-top: 40px;
+}
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
@@ -879,34 +842,30 @@ footer .social {
   }
 
   footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #effe8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #effe8b;
+  }
+  footer .social-icons {
+    padding-bottom: 35px;
+  }
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .social-icons p {
+    display: flex;
+    justify-content: center;
+  }
 }
-
-
-footer .content-wrapper {
-  width: 100%;
- 
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-
 
 /* ==========================================================================
    Print styles.
