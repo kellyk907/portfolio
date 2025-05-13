@@ -209,10 +209,11 @@ p {
   font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #000;
   text-wrap: wrap;
   overflow: hidden;
+  padding-left: 2px;
 }
 #copyright {
   font-family: "Poiret One", serif;
@@ -264,7 +265,7 @@ p {
 }
 #skill {
   font-family: "Poiret One", serif;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 500;
   color: #000;
   text-align: center;
@@ -754,11 +755,12 @@ footer .social {
 }
 footer a {
   justify-content: center;
+  padding-left: 50px;
 }
 
 footer p {
   color: #000;
-  padding-right: 92px;
+  padding-right: 40px;
 }
 footer .social-icons {
   padding-top: 40px;
@@ -770,7 +772,16 @@ footer .social-icons {
   .content-wrapper {
     max-width: 960px;
   }
-
+  #contact {
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    color: #000;
+    text-wrap: wrap;
+    overflow: hidden;
+    padding-left: 15px;
+  }
   header {
     padding: 80px 0;
   }
@@ -783,6 +794,15 @@ footer .social-icons {
   h4 {
     font-size: 1.875em;
     color: #000;
+  }
+
+  #header {
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    color: #000;
+    text-wrap: wrap;
   }
 
   p {
@@ -810,7 +830,23 @@ footer .social-icons {
     font-size: 1.125em;
     color: #000;
   }
-
+  #skill {
+    font-family: "Poiret One", serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 20px;
+    display: inline-block;
+    width: 73%;
+    margin: 5% auto;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 0.29em;
+    line-height: 1.5em;
+    background: #fff;
+    border: dashed 3px #000;
+  }
   aside h2 {
     margin-bottom: 20px;
     color: #000;
