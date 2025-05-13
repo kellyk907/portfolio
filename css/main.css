@@ -235,7 +235,7 @@ p {
   font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 3em;
+  font-size: 2em;
   color: #000;
   text-wrap: wrap;
 }
@@ -260,7 +260,7 @@ p {
   text-align: left;
   text-wrap: balance;
   padding: 10px;
-  width: 100%;
+  width: 90%;
 }
 #skill {
   font-family: "Poiret One", serif;
@@ -271,7 +271,7 @@ p {
   text-wrap: wrap;
   padding: 20px;
   display: inline-block;
-  width: 50%;
+  width: 73%;
   margin: 5% auto;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   padding: 0.29em;
@@ -292,7 +292,7 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 92%;
   border-radius: 8px;
   object-fit: contain;
 }
@@ -320,7 +320,7 @@ address {
 }
 .copyright {
   background-color: #effe8b;
-  width: 100%;
+  width: 80%;
   margin: 0px;
   padding-left: 30px;
 }
@@ -348,7 +348,7 @@ header figure {
 .header-divider {
   background: #effe8b;
   height: 1px;
-  width: 100%;
+  width: 90%;
   margin: 10px 0 20px 0;
 }
 
@@ -382,15 +382,16 @@ footer .content-wrapper {
   background-color: #effe8b;
 }
 
+.hero-area p {
+  padding-left: 20px;
+}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 /* Makes a smooth transition for Nav */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
-}
-@media {
-  max-width: 767px;
 }
 
 .hero-area {
@@ -752,13 +753,12 @@ footer .social {
   flex-direction: row;
 }
 footer a {
-  padding-top: 12px;
-  padding-right: 50px;
-  padding-left: 40px;
   justify-content: center;
 }
+
 footer p {
-  padding-left: 18px;
+  color: #000;
+  padding-right: 92px;
 }
 footer .social-icons {
   padding-top: 40px;
