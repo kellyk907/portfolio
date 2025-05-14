@@ -142,14 +142,15 @@ h1 {
 }
 
 h2 {
-  font-family: "Poiret One", serif;
+  font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: #000;
   line-height: 1em;
   text-align: left;
   padding: 10px;
+  text-wrap: wrap;
 }
 
 h3,
@@ -162,9 +163,9 @@ h4 {
 }
 
 h5 {
-  font-family: "Poiret One", serif;
+  font-family: "La Belle Aurore", serif;
   font-weight: 500;
-  font-size: 0.75em;
+  font-size: 1em;
   margin: 20px 0;
   text-justify: auto;
   color: #000;
@@ -178,7 +179,7 @@ p {
   color: #000;
   text-align: left;
 }
-#one {
+.one {
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -205,7 +206,8 @@ p {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
 }
-#contact {
+
+.contact {
   font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
@@ -213,18 +215,27 @@ p {
   color: #000;
   text-wrap: wrap;
   overflow: hidden;
-  padding-left: 2px;
+  padding: 5px;
 }
-#copyright {
+.social {
+  font-family: "La Belle Aurore", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #000;
+  text-wrap: wrap;
+  overflow: hidden;
+}
+.copyright {
   font-family: "Poiret One", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #000;
   text-align: left;
-  padding: 80px;
+  padding: 30px;
 }
-#htag {
+.htag {
   font-family: "Poiret One", serif;
   font-weight: 500;
   font-size: 1.875em;
@@ -232,16 +243,8 @@ p {
   color: #000;
   text-align: left;
 }
-#header {
-  font-family: "La Belle Aurore", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2em;
-  color: #000;
-  text-wrap: wrap;
-}
 
-#ptitle {
+.ptitle {
   font-family: "Poiret One", serif;
   font-style: normal;
   font-weight: 500;
@@ -251,7 +254,7 @@ p {
   text-align: left;
   padding: 10px;
 }
-#pbody {
+.pbody {
   font-family: "Poiret One", serif;
   font-style: normal;
   font-weight: 500;
@@ -263,14 +266,14 @@ p {
   padding: 10px;
   width: 90%;
 }
-#skill {
+.skill {
   font-family: "Poiret One", serif;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
   color: #000;
   text-align: center;
   text-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   width: 73%;
   margin: 5% auto;
@@ -278,10 +281,10 @@ p {
   padding: 0.29em;
   line-height: 1.5em;
   background: #fff;
-  border: dashed 3px #000;
+  border: dashed 2px #000;
 }
 
-#skilltool {
+.skilltool {
   font-family: "Poiret One", serif;
   font-style: normal;
   font-weight: 500;
@@ -322,8 +325,6 @@ address {
 .copyright {
   background-color: #effe8b;
   width: 80%;
-  margin: 0px;
-  padding-left: 30px;
 }
 
 .center,
@@ -371,20 +372,86 @@ header nav ul li {
   word-spacing: 30px;
 }
 footer {
+  background-color: #202322;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #effe8b;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer .content-wrapper {
-  width: 100%;
-  background-color: #effe8b;
+  width: 55%;
 }
 
-.hero-area p {
-  padding-left: 20px;
+footer .linked {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+}
+
+footer .linked p {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  color: #000;
+}
+footer .linked p i {
+  font-size: 1.3125em;
+  color: #000;
+}
+footer .git {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+}
+
+footer .git p {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  color: #000;
+}
+footer .git p i {
+  font-size: 1.3125em;
+  color: #000;
+}
+footer .contact-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contact-icons p {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+footer .contact-icons p i {
+  font-size: 1.3125em;
+  color: #000;
+}
+
+footer .copyright {
+  margin: 20px 0;
+  padding-top: 200px;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -470,6 +537,7 @@ h3 {
 
 .column {
   flex: 50%;
+  padding: 10px;
 }
 
 .features {
@@ -545,8 +613,23 @@ footer a {
   padding-left: 30px;
   justify-content: center;
 }
-footer .social-icons {
-  padding-top: 40px;
+
+#copyright {
+  font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #000;
+  text-align: left;
+}
+#contact {
+  font-family: "La Belle Aurore", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2m;
+  color: #000;
+  text-wrap: wrap;
+  overflow: hidden;
 }
 /* ==========================================================================
    Helper classes
@@ -746,24 +829,12 @@ footer .footer-content {
   width: 100%;
 }
 
-footer .social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #000;
-  flex-direction: row;
-}
 footer a {
   justify-content: center;
-  padding-left: 50px;
 }
 
 footer p {
   color: #000;
-  padding-right: 40px;
-}
-footer .social-icons {
-  padding-top: 40px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -776,11 +847,10 @@ footer .social-icons {
     font-family: "La Belle Aurore", serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #000;
     text-wrap: wrap;
     overflow: hidden;
-    padding-left: 15px;
   }
   header {
     padding: 80px 0;
@@ -837,9 +907,9 @@ footer .social-icons {
     color: #000;
     text-align: center;
     text-wrap: wrap;
-    padding: 20px;
+    padding: 5px;
     display: inline-block;
-    width: 73%;
+    width: 50%;
     margin: 5% auto;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 0.29em;
@@ -884,22 +954,34 @@ footer .social-icons {
     text-align: center;
     background-color: #effe8b;
   }
-  footer .social-icons {
-    padding-bottom: 35px;
-  }
   footer .content-wrapper {
     width: 100%;
   }
-
-  footer .social-icons {
+  footer .linked {
+    padding-bottom: 35px;
+    color: #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  footer .social-icons p {
+  footer .linked p {
     display: flex;
     justify-content: center;
+  }
+  footer .git {
+    padding-bottom: 35px;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .git p {
+    display: flex;
+    justify-content: center;
+  }
+  .footer a {
+    background-color: #000;
   }
 }
 
