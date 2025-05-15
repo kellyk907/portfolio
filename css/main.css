@@ -153,15 +153,22 @@ h2 {
   text-wrap: wrap;
 }
 
-h3,
-h4 {
+h3 {
   font-family: "Poiret One", serif;
   font-weight: 500;
   font-size: 1.125em;
   margin: 20px 0;
   color: #000;
 }
-
+h4 {
+  font-family: "Poiret One", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  color: #000;
+  line-height: 1em;
+  text-align: left;
+}
 h5 {
   font-family: "La Belle Aurore", serif;
   font-weight: 500;
@@ -495,6 +502,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-left: 30px;
 }
 h2 {
   font-family: "La Belle Aurore", serif;
@@ -535,7 +543,7 @@ h3 {
 .skillset {
   padding-right: 30px;
 }
-.skill {
+#skill1 #skill2 {
   font-family: "Poiret One", serif;
   font-size: 0.75em;
   font-weight: 500;
@@ -552,21 +560,18 @@ h3 {
   background: #fff;
   border: dashed 2px #000;
 }
-.skillset .content-wrapper {
-  padding-inline: 5px;
-  justify-content: center;
-  padding-right: 30px;
-  padding-left: 30px;
-}
 
 /*Makes the 2 columns needed */
-.row {
-  display: flex;
+.column {
+  float: left;
+  width: 50%;
 }
 
-.column {
-  flex: 50%;
-  padding: 10px;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .features {
@@ -655,7 +660,7 @@ footer a {
   font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2m;
+  font-size: 1.2em;
   color: #000;
   text-wrap: wrap;
   overflow: hidden;
