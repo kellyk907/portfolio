@@ -856,21 +856,21 @@ footer a {
   footer .content-wrapper {
     width: 100%;
   }
-}
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-}
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
 
-footer a {
-  justify-content: center;
-}
+  footer a {
+    justify-content: center;
+  }
 
-footer p {
-  color: #000;
+  footer p {
+    color: #000;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
