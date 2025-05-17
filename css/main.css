@@ -636,7 +636,28 @@ h3 {
   justify-content: center;
   border-radius: 8px;
 }
+skillset .column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  float: none;
+}
 
+skillset .row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  float: none;
+}
+.skillset h2 {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
 footer a {
   padding-top: 12px;
   padding-right: 15px;
@@ -714,14 +735,16 @@ footer a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   /*Tablet styles here*/
   /* Makes a smooth transition for Nav */
+
   @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
     }
   }
+
   /* General styles */
   .content-wrapper {
     max-width: 640px;
@@ -763,6 +786,7 @@ footer a {
       scroll-behavior: smooth;
     }
   }
+
   .content-wrapper {
     max-width: 100%;
   }
@@ -848,6 +872,29 @@ footer a {
     width: 75%;
     margin: 0;
   }
+  skillset .column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    float: none;
+  }
+  .skillset h2 {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  skillset .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    float: none;
+  }
+
   footer {
     padding-left: 200px;
     padding-right: 200px;
@@ -862,6 +909,7 @@ footer a {
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
+    float: none;
   }
 
   footer a {
@@ -945,7 +993,7 @@ footer a {
     text-wrap: wrap;
     padding: 5px;
     display: inline-block;
-    width: 50%;
+    width: 60%;
     margin: 5% auto;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 0.29em;
