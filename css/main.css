@@ -471,251 +471,264 @@ footer .contact-icons p i {
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 /* Makes a smooth transition for Nav */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+@media only screen and (min-width: 320px) {
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
 
-  .hero-area {
-    background-color: #f4ffa9;
-    display: flex;
-    justify-content: center;
-  }
+    .hero-area {
+      background-color: #f4ffa9;
+      display: flex;
+      justify-content: center;
+    }
 
-  .hero-area h1 {
-    font-size: 2em;
-    font-family: "La Belle Aurore", serif;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: center;
-  }
+    .hero-area h1 {
+      font-size: 2em;
+      font-family: "La Belle Aurore", serif;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: center;
+    }
 
-  .hero-area h2 {
-    padding: 20px;
-  }
+    .hero-area h2 {
+      padding: 20px;
+    }
 
-  .hero-area img {
-    transform: scale(0.75);
-  }
+    .hero-area img {
+      transform: scale(0.75);
+    }
 
-  .skillset {
-    background-color: #effe8b;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 30px;
-  }
-  h2 {
-    font-family: "La Belle Aurore", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5em;
-    color: #000;
-    line-height: 1em;
-    text-align: left;
-    padding: 10px;
-    text-wrap: wrap;
-  }
+    .skillset {
+      background-color: #effe8b;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-left: 30px;
+    }
+    h2 {
+      font-family: "La Belle Aurore", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.5em;
+      color: #000;
+      line-height: 1em;
+      text-align: left;
+      padding: 10px;
+      text-wrap: wrap;
+    }
 
-  h3 {
-    font-family: "Poiret One", serif;
-    font-style: normal;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    text-wrap: wrap;
-    padding: 20px;
-    display: inline-block;
-    width: 68%;
-    margin: 5% auto;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding: 0.29em;
-    line-height: 1.5em;
-    background: #fff;
-    border: dashed 5px #000;
-  }
+    h3 {
+      font-family: "Poiret One", serif;
+      font-style: normal;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+      text-wrap: wrap;
+      padding: 20px;
+      display: inline-block;
+      width: 68%;
+      margin: 5% auto;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      padding: 0.29em;
+      line-height: 1.5em;
+      background: #fff;
+      border: dashed 5px #000;
+    }
 
-  .skillset .form {
-    margin-top: 30px;
-    justify-content: left;
-    display: block;
-  }
+    .skillset .form {
+      margin-top: 30px;
+      justify-content: left;
+      display: block;
+    }
 
-  .skillset {
-    padding-right: 30px;
-  }
-  #skill1 #skill2 {
-    font-family: "Poiret One", serif;
-    font-size: 0.75em;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    text-wrap: wrap;
-    padding: 10px;
-    display: inline-block;
-    width: 60%;
-    margin: 5% auto;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    padding: 0.29em;
-    line-height: 1.5em;
-    background: #fff;
-    border: dashed 2px #000;
-  }
+    .skillset {
+      padding-right: 30px;
+    }
+    #skill1 #skill2 {
+      font-family: "Poiret One", serif;
+      font-size: 0.75em;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+      text-wrap: wrap;
+      padding: 10px;
+      display: inline-block;
+      width: 60%;
+      margin: 5% auto;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      padding: 0.29em;
+      line-height: 1.5em;
+      background: #fff;
+      border: dashed 2px #000;
+    }
+    .skillset {
+      display: table;
+      height: 200px;
+      padding-left: 150px;
+    }
+    .row .column {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+      width: 50%;
+    }
 
-  .features {
-    background-color: #f4ffa9;
-    display: flex;
-    justify-content: center;
-  }
+    .features {
+      background-color: #f4ffa9;
+      display: flex;
+      justify-content: center;
+    }
 
-  .features article {
-    width: 63%;
-    margin: 30px 0;
-    padding: 20px;
-  }
+    .features article {
+      width: 63%;
+      margin: 30px 0;
+      padding: 20px;
+    }
 
-  .features .features-items {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-  }
-  .features .content-wrapper {
-    text-align: left;
-  }
-  .features i {
-    font-size: 5.75em;
-    margin-bottom: 40px;
-  }
+    .features .features-items {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
+    .features .content-wrapper {
+      text-align: left;
+    }
+    .features i {
+      font-size: 5.75em;
+      margin-bottom: 40px;
+    }
 
-  .features p {
-    text-align: left;
-    margin: 0;
-    line-height: 2;
-    color: #000;
-  }
-  .features h1 {
-    text-wrap: wrap;
-    text-align: left;
-  }
+    .features p {
+      text-align: left;
+      margin: 0;
+      line-height: 2;
+      color: #000;
+    }
+    .features h1 {
+      text-wrap: wrap;
+      text-align: left;
+    }
 
-  .reviews {
-    background-color: #effe8b;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    color: #000;
-  }
+    .reviews {
+      background-color: #effe8b;
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      color: #000;
+    }
 
-  .reviews p {
-    color: #000;
-    padding: 10px;
-  }
+    .reviews p {
+      color: #000;
+      padding: 10px;
+    }
 
-  .reviews h2 {
-    margin-bottom: 40px;
-    line-height: 1;
-    font-family: "La Belle Aurore", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    color: #000;
-  }
+    .reviews h2 {
+      margin-bottom: 40px;
+      line-height: 1;
+      font-family: "La Belle Aurore", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3em;
+      color: #000;
+    }
 
-  .reviews img {
-    object-fit: contain;
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-  }
-  skillset .column {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    float: none;
-  }
-  .skill-header {
-    background-color: #effe8b;
-    padding: 20px;
-  }
-  .skillset h2 {
-    float: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    background-color: #effe8b;
-  }
-  footer a {
-    padding-top: 12px;
-    padding-right: 15px;
-    padding-left: 30px;
-    justify-content: center;
-  }
+    .reviews img {
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      border-radius: 8px;
+    }
+    skillset .column {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      float: none;
+    }
+    .skill-header {
+      background-color: #effe8b;
+      padding: 20px;
+    }
+    .skillset h2 {
+      float: none;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      background-color: #effe8b;
+    }
+    footer a {
+      padding-top: 12px;
+      padding-right: 15px;
+      padding-left: 30px;
+      justify-content: center;
+    }
 
-  .copyright {
-    font-family: "Poiret One", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1em;
-    color: #000;
-    text-align: center;
-    width: 84%;
-    padding: 34px;
-  }
-  .contact {
-    font-family: "La Belle Aurore", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2em;
-    color: #000;
-    text-wrap: wrap;
-    overflow: hidden;
-  }
-  /* ==========================================================================
+    .copyright {
+      font-family: "Poiret One", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1em;
+      color: #000;
+      text-align: center;
+      width: 84%;
+      padding: 34px;
+    }
+    .contact {
+      font-family: "La Belle Aurore", serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2em;
+      color: #000;
+      text-wrap: wrap;
+      overflow: hidden;
+    }
+    /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-  .hidden {
-    display: none !important;
-  }
+    .hidden {
+      display: none !important;
+    }
 
-  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-  }
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
 
-  .visuallyhidden.focusable:active,
-  .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-  }
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+      white-space: inherit;
+    }
 
-  .invisible {
-    visibility: hidden;
-  }
+    .invisible {
+      visibility: hidden;
+    }
 
-  .clearfix:before,
-  .clearfix:after {
-    content: " ";
-    display: table;
-  }
+    .clearfix:before,
+    .clearfix:after {
+      content: " ";
+      display: table;
+    }
 
-  .clearfix:after {
-    clear: both;
+    .clearfix:after {
+      clear: both;
+    }
   }
 }
 /* ==========================================================================
@@ -724,7 +737,7 @@ footer .contact-icons p i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 481px) {
   /*Tablet styles here*/
   /* Makes a smooth transition for Nav */
 
@@ -773,146 +786,165 @@ footer .contact-icons p i {
       html {
         scroll-behavior: smooth;
       }
-    }
 
-    .content-wrapper {
-      max-width: 100%;
-    }
+      @media only screen and (max-width: 767px) {
+        #top #wrap_all .flex_column_table .flex_column {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
 
-    /* Header */
-    header {
-      padding: 33px 0;
-    }
+        .content-wrapper {
+          max-width: 100%;
+        }
 
-    header .content-wrapper {
-      width: 100%;
-      justify-content: center;
-    }
+        /* Header */
+        header {
+          padding: 33px 0;
+        }
 
-    header figure {
-      width: 30%;
-    }
+        header .content-wrapper {
+          width: 100%;
+          justify-content: center;
+        }
 
-    header nav {
-      width: 20%;
-    }
+        header figure {
+          width: 30%;
+        }
 
-    header nav ul {
-      justify-content: space-between;
-    }
+        header nav {
+          width: 20%;
+        }
 
-    .header-divider {
-      display: none;
-      color: #f4ffa9;
-    }
+        header nav ul {
+          justify-content: space-between;
+        }
 
-    .hero-area {
-      min-height: 600px;
-    }
+        .header-divider {
+          display: none;
+          color: #f4ffa9;
+        }
 
-    .hero-area h1 {
-      font-size: 3em;
-      line-height: 1;
-      margin: 0;
-    }
+        .hero-area {
+          min-height: 600px;
+        }
 
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: center;
-      align-content: flex-start;
-    }
+        .hero-area h1 {
+          font-size: 3em;
+          line-height: 1;
+          margin: 0;
+        }
 
-    aside .content-wrapper,
-    .form-description aside .content-wrapper .form {
-      width: 40%;
-    }
+        aside .content-wrapper {
+          margin: 50px 0;
+          display: flex;
+          justify-content: center;
+          align-content: flex-start;
+        }
 
-    .features article {
-      display: flex;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
-    }
+        aside .content-wrapper,
+        .form-description aside .content-wrapper .form {
+          width: 40%;
+        }
 
-    .features .features-item-description {
-      width: 62%;
-    }
+        .features article {
+          display: flex;
+          align-items: center;
+          flex-flow: column wrap;
+          flex-basis: 50%;
+        }
 
-    .features i {
-      margin-bottom: 30px;
-    }
+        .features .features-item-description {
+          width: 62%;
+        }
 
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
-    }
+        .features i {
+          margin-bottom: 30px;
+        }
 
-    .reviews h2 {
-      width: 85%;
-    }
+        .reviews article {
+          display: flex;
+          justify-content: space-between;
+        }
 
-    .reviews article div {
-      width: 49%;
-    }
+        .reviews h2 {
+          width: 85%;
+        }
 
-    .reviews h3 {
-      width: 75%;
-      margin: 0;
-    }
+        .reviews article div {
+          width: 49%;
+        }
 
-    skillset .column {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-      float: none;
-    }
-    .skillset h2 {
-      float: none;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 50%;
-      text-align: center;
-    }
+        .reviews h3 {
+          width: 75%;
+          margin: 0;
+        }
 
-    skillset .row {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-      float: none;
-    }
+        skillset .column {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          width: 100%;
+          float: none;
+        }
 
-    footer {
-      padding-left: 200px;
-      padding-right: 200px;
-    }
+        .skillset {
+          display: table;
+          height: 200px;
+        }
+        .row .column {
+          display: table-cell;
+          vertical-align: middle;
+          float: none;
+          width: 50%;
+        }
 
-    footer .content-wrapper {
-      width: 100%;
-    }
+        .skillset h2 {
+          float: none;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          width: 50%;
+          text-align: center;
+        }
 
-    footer .footer-content {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-      float: none;
-    }
+        skillset .row {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          width: 100%;
+          float: none;
+        }
 
-    footer a {
-      justify-content: center;
-    }
+        footer {
+          padding-left: 200px;
+          padding-right: 200px;
+        }
 
-    footer p {
-      color: #000;
+        footer .content-wrapper {
+          width: 100%;
+        }
+
+        footer .footer-content {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          width: 100%;
+          float: none;
+        }
+
+        footer a {
+          justify-content: center;
+        }
+
+        footer p {
+          color: #000;
+        }
+      }
     }
   }
 }
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1025px) {
   /*Desktop styles here*/
 
   .content-wrapper {
@@ -975,22 +1007,40 @@ footer .contact-icons p i {
     font-size: 1.125em;
     color: #000;
   }
-  #skill {
+  .skill {
     font-family: "Poiret One", serif;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
     color: #000;
     text-align: center;
     text-wrap: wrap;
     padding: 5px;
     display: inline-block;
-    width: 60%;
+    width: 20%;
     margin: 5% auto;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 0.29em;
-    line-height: 1.5em;
+    line-height: 1em;
     background: #fff;
-    border: dashed 3px #000;
+    border: dashed 2px #000;
+  }
+  /*Makes the 2 columns needed */
+  .column {
+    float: left;
+    width: 50%;
+    padding-left: 28px;
+  }
+
+  .row {
+    float: left;
+    padding-left: 28px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   aside h2 {
     margin-bottom: 20px;
@@ -1023,11 +1073,7 @@ footer .contact-icons p i {
   }
 
   .skillset {
-    padding-left: 400px;
-  }
-
-  .skill-header {
-    padding-left: 400px;
+    float: none;
   }
 
   footer {
