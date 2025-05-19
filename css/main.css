@@ -389,7 +389,9 @@ header nav ul li {
   float: left;
   width: 50%;
 }
-
+.row {
+  width: 50%;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -399,6 +401,7 @@ header nav ul li {
 .reviews p {
   font-size: 1em;
 }
+
 .skillset {
   width: 100%;
   height: 100%;
@@ -406,6 +409,7 @@ header nav ul li {
   padding: 0px;
   overflow-x: hidden;
 }
+
 footer {
   background-color: #effe8b;
   display: flex;
@@ -476,7 +480,6 @@ footer .git p {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #000;
 }
 footer .contact-icons p {
@@ -937,7 +940,6 @@ footer p {
           display: table;
           height: 200px;
         }
-
         .skillset .content-wrapper {
           width: 100%;
         }
@@ -1090,14 +1092,19 @@ footer p {
   }
   /*Makes the 2 columns needed */
   .column {
-    float: left;
-    width: 50%;
-    padding-left: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    min-width: 1025px;
   }
 
   .row {
-    float: left;
-    padding-left: 28px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    align-content: center;
+    width: 100%;
+    min-width: 1025px;
   }
 
   /* Clear floats after the columns */
@@ -1138,9 +1145,6 @@ footer p {
   }
   .reviews .about {
     display: inline;
-  }
-  .skillset {
-    float: none;
   }
 
   footer {
@@ -1183,20 +1187,12 @@ footer p {
   .footer a {
     background-color: #000;
   }
-  footer .contact {
-    padding-left: 300px;
-  }
-  footer .contact-icons {
-    padding-right: 450px;
-  }
-  footer .social {
-    padding-left: 300px;
-  }
-  footer .linked {
-    padding-right: 450px;
-  }
-  footer .git {
-    padding-right: 450px;
+
+  .footer {
+    border: 1px dashed blue;
+    height: 50px;
+    box-sizing: border-box;
+    max-width: 50%;
   }
 }
 
