@@ -1,493 +1,486 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-
-html {
-  color: #0000;
-  font-size: 3em;
-  line-height: 1.4;
-}
-
-::-moz-selection {
-  background: #dee1fa;
-  text-shadow: none;
-}
-
-::selection {
-  background: #dee1fa;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+* {
+  margin: 0% 0% 0% 0%;
   padding: 0;
-}
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
 
-textarea {
-  resize: vertical;
-}
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #f4ffa9;
-  color: #000;
-  padding: 0.2em 0;
-}
+  html {
+    color: #0000;
+    font-size: 3em;
+    line-height: 1.4;
+  }
 
-body {
-  font-family: "Poiret One", sans-serif;
-}
+  ::-moz-selection {
+    background: #dee1fa;
+    text-shadow: none;
+  }
 
-.navbar {
-  display: flex;
-  position: sticky;
-  align-items: center;
-  justify-content: center;
-  top: 0px;
-  background: #effe8b;
-  background-blend-mode: darken;
-  background-size: cover;
-  color: #000;
-  padding: 10px 20px;
-  font-family: "Poiret One", sans-serif;
-}
+  ::selection {
+    background: #dee1fa;
+    text-shadow: none;
+  }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-}
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-.nav-list li {
-  margin-right: 20px;
-}
+  textarea {
+    resize: vertical;
+  }
 
-.nav-list li:last-child {
-  margin-right: 0;
-}
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #f4ffa9;
+    color: #000;
+    padding: 0.2em 0;
+  }
 
-.nav-list li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
-}
+  body {
+    font-family: "Poiret One", sans-serif;
+  }
 
-.nav-list li a:hover {
-  color: #ccc;
-}
+  .navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background: #effe8b;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: #000;
+    padding: 10px 20px;
+    font-family: "Poiret One", sans-serif;
+  }
 
-.btn {
-  background-color: #ccc;
-  color: #000;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+  .nav-list {
+    display: flex;
+    list-style: none;
+  }
 
-.btn:hover {
-  background-color: #000;
-  color: #ccc;
-}
+  .nav-list li {
+    margin-right: 20px;
+  }
 
-html {
-  font-size: 1rem;
-}
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
 
-body {
-  font-size: 1em;
-  font-family: "Poiret One", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #0000;
-  text-align: center;
-}
+  .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+  }
 
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .nav-list li a:hover {
+    color: #ccc;
+  }
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #a0a925 #effe8b;
+  }
 
-a {
-  color: #0000;
-  text-decoration: none;
-}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
 
-.features-item-description {
-  font-size: medium;
-}
+  *::-webkit-scrollbar-track {
+    background: #eef5b8;
+  }
 
-h1 {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 4em;
-  color: #000;
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: #effe8b;
+    border-radius: 10px;
+    border: 3px groove #effe8b;
+  }
+  .btn {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
 
-h2 {
-  font-family: "La Belle Aurore", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.5em;
-  color: #000;
-  line-height: 1em;
-  text-align: center;
-  text-wrap: wrap;
-}
+  .btn:hover {
+    background-color: #000;
+    color: #ccc;
+  }
 
-h3 {
-  font-family: "Poiret One", serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  margin: 20px 0;
-  color: #000;
-}
-h4 {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3em;
-  color: #000;
-  line-height: 1em;
-  text-align: left;
-}
-h5 {
-  font-family: "La Belle Aurore", serif;
-  font-weight: 500;
-  font-size: 1em;
-  margin: 20px 0;
-  text-justify: auto;
-  color: #000;
-}
+  html {
+    font-size: 1rem;
+  }
 
-p {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 5em;
-  color: #000;
-  text-align: left;
-}
-.one {
-  align-self: center;
-  background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  color: #41403e;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Poiret One", sans-serif;
-  font-size: 1rem;
-  line-height: 23px;
-  outline: none;
-  padding: 0.75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-}
+  body {
+    font-size: 1em;
+    font-family: "Poiret One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000;
+    text-align: center;
+  }
 
-.contact {
-  font-family: "La Belle Aurore", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  text-wrap: wrap;
-  overflow: hidden;
-  padding: 5px;
-}
-.social {
-  font-family: "La Belle Aurore", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  text-wrap: wrap;
-  overflow: hidden;
-}
-.copyright {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  text-align: left;
-}
-.htag {
-  font-family: "Poiret One", serif;
-  font-weight: 500;
-  font-size: 1.875em;
-  margin: 20px 0;
-  color: #000;
-  text-align: left;
-  padding-left: 10px;
-}
-.skilltool {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  display: block;
-  text-align: left;
-  width: 100%;
-}
-.ptitle {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 3em;
-  color: #000;
-  line-height: 1em;
-  text-align: left;
-  padding: 10px;
-}
-.pbody {
-  font-family: "Poiret One", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #000;
-  display: block;
-  text-align: left;
-  text-wrap: balance;
-  padding: 10px;
-  width: 90%;
-}
-.skill {
-  font-family: "Poiret One", serif;
-  font-size: 1em;
-  font-weight: 500;
-  color: #000;
-  text-align: center;
-  text-wrap: wrap;
-  padding: 10px;
-  display: inline-block;
-  width: 75%;
-  margin: 5% auto;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  padding: 0.29em;
-  line-height: 1.5em;
-  background: #fff;
-  border: dashed 2px #000;
-}
+  ul,
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-img {
-  width: 92%;
-  border-radius: 8px;
-  object-fit: contain;
-}
+  a {
+    color: #0000;
+    text-decoration: none;
+  }
 
-figure {
-  margin: 0;
-}
+  .features-item-description {
+    font-size: medium;
+  }
 
-p {
-  font-size: 0.875em;
-  line-height: 1.285;
-  color: #000;
-}
+  h1 {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4em;
+    color: #000;
+  }
 
-address {
-  font-style: normal;
-}
+  h2 {
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5em;
+    color: #000;
+    line-height: 1em;
+    text-align: center;
+    text-wrap: wrap;
+  }
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-.copyright p {
-  background-color: #effe8b;
-}
-.copyright {
-  background-color: #effe8b;
-  width: 80%;
-}
+  h3 {
+    font-family: "Poiret One", serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    margin: 20px 0;
+    color: #000;
+  }
+  h4 {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4em;
+    color: #000;
+    line-height: 1em;
+    text-align: left;
+  }
+  h5 {
+    font-family: "La Belle Aurore", serif;
+    font-weight: 500;
+    font-size: 1em;
+    margin: 20px 0;
+    text-justify: auto;
+    color: #000;
+  }
 
-.center,
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  p {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5em;
+    color: #000;
+    text-align: left;
+  }
+  .one {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: 0.75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+  }
 
-header .content-wrapper {
-  margin: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+  .contact {
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #000;
+    text-wrap: wrap;
+    overflow: hidden;
+    padding: 5px;
+  }
+  .social {
+    font-family: "La Belle Aurore", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #000;
+    text-wrap: wrap;
+    overflow: hidden;
+  }
+  .copyright {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #000;
+    text-align: left;
+  }
+  .htag {
+    font-family: "Poiret One", serif;
+    font-weight: 500;
+    font-size: 1.875em;
+    margin: 20px 0;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .skilltool {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #000;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  .ptitle {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    color: #000;
+    line-height: 1em;
+    text-align: left;
+    padding: 10px;
+  }
+  .pbody {
+    font-family: "Poiret One", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #000;
+    display: block;
+    text-align: left;
+    text-wrap: balance;
+    padding: 10px;
+    width: 90%;
+  }
+  .skill {
+    font-family: "Poiret One", serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 10px;
+    display: inline-block;
+    width: 75%;
+    margin: 5% auto;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 0.29em;
+    line-height: 1.5em;
+    background: #fff;
+    border: dashed 2px #000;
+  }
 
-header figure {
-  width: 60%;
-}
+  img {
+    width: 92%;
+    border-radius: 8px;
+    object-fit: contain;
+  }
 
-.header-divider {
-  background: #effe8b;
-  height: 1px;
-  width: 90%;
-  margin: 10px 0 20px 0;
-}
+  figure {
+    margin: 0;
+  }
 
-header nav {
-  width: 60%;
-  font-size: 3em;
-  font-weight: 200;
-  text-transform: uppercase;
-}
+  p {
+    font-size: 0.875em;
+    line-height: 1.285;
+    color: #000;
+  }
 
-header nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
+  address {
+    font-style: normal;
+  }
 
-header nav ul li {
-  font-size: 0.45em;
-  word-spacing: 30px;
-}
-/*Makes the 2 columns needed */
-.column {
-  float: left;
-  width: 50%;
-}
-.row {
-  width: 50%;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.reviews p {
-  font-size: 1em;
-}
-.skillset {
-  margin: auto;
-}
-footer {
-  background-color: #effe8b;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+  .copyright p {
+    background-color: #effe8b;
+  }
+  .copyright {
+    background-color: #effe8b;
+    width: 80%;
+  }
 
-footer .content-wrapper {
-  width: 55%;
-}
+  .center,
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-footer .linked {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #000;
-}
+  header .content-wrapper {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
-footer .linked p i {
-  font-size: 1.5em;
-  color: #000;
-}
+  header figure {
+    width: 60%;
+  }
 
-footer .git p i {
-  font-size: 1.5em;
-  color: #000;
-}
-footer .contact-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .contact-icons p {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .header-divider {
+    background: #effe8b;
+    height: 1px;
+    width: 90%;
+    margin: 10px 0 20px 0;
+  }
 
-footer .contact-icons p i {
-  font-size: 1.5em;
-  color: #000;
-}
-footer .linked p {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  header nav {
+    width: 60%;
+    font-size: 3em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
 
-  color: #000;
-}
-footer .git {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #000;
-}
-footer .git p {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-}
-footer .contact-icons p {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer p {
-  margin: 0;
-}
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 
+  header nav ul li {
+    font-size: 0.45em;
+    word-spacing: 30px;
+  }
+
+  .reviews p {
+    font-size: 1.25em;
+  }
+  .reviews img {
+    object-fit: contain;
+    scale: 65%;
+  }
+
+  .write {
+    font-family: "Poiret One", serif;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .footer {
+    background: #effe8b;
+    padding: 30px 0px;
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+  }
+
+  .footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: #000;
+    font-size: 0.8em;
+  }
+
+  .footer .row a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+  }
+
+  .footer .row a:hover {
+    color: #fff;
+  }
+
+  .footer .row ul {
+    width: 100%;
+  }
+
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+  }
+
+  @media (max-width: 720px) {
+    .footer {
+      text-align: left;
+      padding: 5%;
+    }
+    .footer .row ul li {
+      display: block;
+      margin: 10px 0px;
+      text-align: left;
+    }
+    .footer .row a i {
+      margin: 0% 3%;
+    }
+  }
+}
 /* -------------------- Mobile Styles - Homepage -------------------- */
 /* Makes a smooth transition for Nav */
 @media only screen and (min-width: 320px) {
@@ -518,13 +511,6 @@ footer p {
       transform: scale(0.75);
     }
 
-    .skillset {
-      background-color: #effe8b;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      padding-left: 30px;
-    }
     h2 {
       font-family: "La Belle Aurore", serif;
       font-style: normal;
@@ -541,63 +527,41 @@ footer p {
       font-family: "Poiret One", serif;
       font-style: normal;
       font-weight: 500;
-      color: #000;
-      text-align: center;
-      text-wrap: wrap;
-      padding: 20px;
-      display: inline-block;
-      width: 68%;
-      margin: 5% auto;
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-      padding: 0.29em;
-      line-height: 1.5em;
-      background: #fff;
-      border: dashed 5px #000;
-    }
-
-    .skillset .form {
-      margin-top: 30px;
-      justify-content: left;
-      display: block;
-    }
-
-    .skillset {
-      padding-right: 30px;
-    }
-
-    #skill1 #skill2 {
-      font-family: "Poiret One", serif;
-      font-size: 0.75em;
-      font-weight: 500;
+      font-size: 1em;
       color: #000;
       text-align: center;
       text-wrap: wrap;
       padding: 10px;
       display: inline-block;
-      width: 60%;
+      width: 30%;
       margin: 5% auto;
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      border-radius: 120px 15px 120px 15px/15px 120px 15px 120px;
       padding: 0.29em;
-      line-height: 1.5em;
+      line-height: 1em;
       background: #fff;
       border: dashed 2px #000;
     }
-    .skillset {
-      display: table;
-      height: 200px;
-      padding-left: 130px;
+    h4 {
+      font-size: 2em;
     }
- 
-    .row .column {
-      display: table-cell;
-      vertical-align: middle;
-      float: none;
-      width: 79%;
+    .skilltop {
+      background-color: #effe8b;
+      padding-left: 120px;
+      width: 100%;
+      margin: 0;
     }
-    .row{
-      padding-right:100px;
+    .skillsection {
+      width: 100%;
+      background-color: #effe8b;
+      justify-content: center;
     }
-  
+
+    .column {
+      margin: 0;
+    }
+    .row {
+      margin: 0;
+    }
     .features {
       background-color: #f4ffa9;
       display: flex;
@@ -641,11 +605,13 @@ footer p {
       justify-content: center;
       text-align: left;
       color: #000;
+      flex: wrap;
     }
 
     .reviews p {
       color: #000;
       padding: 10px;
+      float: left;
     }
 
     .reviews h2 {
@@ -654,7 +620,7 @@ footer p {
       font-family: "La Belle Aurore", serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 3em;
+      font-size: 3.5em;
       color: #000;
     }
 
@@ -664,52 +630,15 @@ footer p {
       justify-content: center;
       border-radius: 8px;
     }
-    skillset .column {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-      float: none;
-    }
-    .skill-header {
-      background-color: #effe8b;
-      padding: 20px;
-    }
-    .skillset h2 {
-      float: none;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-      background-color: #effe8b;
-    }
-    footer a {
-      padding-right: 15px;
-      padding-left: 30px;
-      justify-content: center;
+    .skilltop {
     }
 
-    .social h2 {
-      padding-left: 25px;
+    .write p {
+      font-size: 1em;
     }
-
-    .contact h2 {
-      padding-left: 25px;
+    .footer {
+      padding-left: 130px;
     }
-    .social .git {
-      padding: 40px;
-    }
-    .social .linked {
-      padding: 40px;
-    }
-
-    .contact .contact-icons {
-      padding: 40px;
-    }
-    .footer-content {
-      padding-left: 80px;
-    }
-
     .copyright {
       font-family: "Poiret One", serif;
       font-style: normal;
@@ -718,6 +647,7 @@ footer p {
       color: #000;
       text-align: center;
       width: 85%;
+      padding-right: 50px;
     }
     .contact {
       font-family: "La Belle Aurore", serif;
@@ -922,84 +852,6 @@ footer p {
           width: 75%;
           margin: 0;
         }
-
-        skillset .column {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          width: 100%;
-          float: none;
-        }
-
-        .skillset {
-          display: table;
-          height: 200px;
-        }
-        .skillset .content-wrapper {
-          width: 100%;
-        }
-        .row .column {
-          display: table-cell;
-          vertical-align: middle;
-          float: none;
-          width: 50%;
-        }
-
-        skillset .row {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          width: 100%;
-          float: none;
-        }
-
-        footer {
-          padding-left: 200px;
-          padding-right: 200px;
-        }
-
-        footer .content-wrapper {
-          width: 100%;
-        }
-
-        footer .footer-content {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column;
-          width: 100%;
-          float: none;
-        }
-
-        footer a {
-          justify-content: center;
-        }
-
-        footer p {
-          color: #000;
-        }
-        .social h2 {
-          padding-left: 160px;
-        }
-
-        .contact h2 {
-          padding-left: 160px;
-        }
-        .social .git {
-          padding: 40px;
-        }
-        .social .linked {
-          padding: 40px;
-        }
-
-        .contact .contact-icons {
-          padding: 40px;
-        }
-        .footer-content {
-          padding-left: 80px;
-        }
-        .copyright {
-          justify-items: center;
-        }
       }
     }
   }
@@ -1024,7 +876,7 @@ footer p {
     padding: 80px 0;
   }
   h2 {
-    font-size: 2.25em;
+    font-size: 3.5em;
     color: #000;
   }
 
@@ -1085,42 +937,13 @@ footer p {
     background: #fff;
     border: dashed 2px #000;
   }
-  /*Makes the 2 columns needed */
-  .column {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    min-width: 1025px;
-  }
 
-  .row {
-    flex-basis: 50%;
-    box-sizing: border-box;
-    align-content: center;
-    width: 100%;
-    min-width: 1025px;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .skillset {
-    padding-left: 140px;
-    padding-right: 140px;
-  aside h2 {
+  .aside h2 {
     margin-bottom: 20px;
     color: #000;
     font-size: 3em;
     width: 100%;
     text-wrap: wrap;
-  }
-
-  .skill-header{
-    padding-left: 50px;
   }
 
   aside div {
@@ -1148,56 +971,7 @@ footer p {
   .reviews .about {
     display: inline;
   }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #effe8b;
-  }
-
-  footer .footer-content {
-    flex-direction: row;
-  }
-  footer .content-wrapper {
-    width: 100%;
-  }
-  footer .linked {
-    padding-bottom: 35px;
-    color: #000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  footer .linked p {
-    display: flex;
-    justify-content: center;
-  }
-  footer .git {
-    padding-bottom: 35px;
-    color: #000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  footer .git p {
-    display: flex;
-    justify-content: center;
-  }
-  .footer a {
-    background-color: #000;
-  }
-
-  .footer {
-    border: 1px dashed blue;
-    height: 50px;
-    box-sizing: border-box;
-    max-width: 50%;
-  }
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
