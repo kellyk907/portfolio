@@ -325,7 +325,7 @@ p {
   text-wrap: wrap;
   padding: 10px;
   display: inline-block;
-  width: 75%;
+  width: 80%;
   margin: 5% auto;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   padding: 0.29em;
@@ -333,7 +333,69 @@ p {
   background: #fff;
   border: dashed 2px #000;
 }
+.skillz {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.skillz {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
 
+.skillz .header {
+  background-color: #effe8b;
+  margin-top: -20px;
+  font-size: 1em;
+  padding-bottom: 5px;
+  padding-top: 40px;
+}
+
+.sheader {
+  background-color: #effe8b;
+}
+.set1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background-color: #effe8b;
+  margin: 0;
+}
+.set2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background-color: #effe8b;
+  margin: 0;
+}
+.row h3 {
+  font-size: 1em;
+  width: 50%;
+}
+.col1 {
+  background-color: #effe8b;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  margin: 0;
+}
+
+.col2 {
+  background-color: #effe8b;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  margin: 0;
+}
+
+.row {
+  background-color: #effe8b;
+}
 img {
   width: 92%;
   border-radius: 8px;
@@ -410,7 +472,9 @@ header nav ul li {
   font-size: 0.45em;
   word-spacing: 30px;
 }
-
+.reviews {
+  display: grid;
+}
 .reviews p {
   font-size: 1.25em;
 }
@@ -546,20 +610,6 @@ body {
       font-size: 2em;
     }
 
-    .skillsection {
-      display: grid;
-      width: 100%;
-      background-color: #effe8b;
-      justify-content: center;
-      padding-left: 30px;
-    }
-
-    .column {
-      margin: 0;
-    }
-    .row {
-      margin: 0;
-    }
     .features {
       background-color: #f4ffa9;
       display: flex;
@@ -699,6 +749,7 @@ body {
     }
   }
 }
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -965,6 +1016,10 @@ body {
   }
   .reviews .about {
     display: inline;
+  }
+  .skillz {
+    margin-left: -20px;
+    max-width: 2200px;
   }
 }
 /* ==========================================================================
