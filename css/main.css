@@ -401,15 +401,9 @@ header nav ul li {
 .reviews p {
   font-size: 1em;
 }
-
 .skillset {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  margin: auto;
 }
-
 footer {
   background-color: #effe8b;
   display: flex;
@@ -570,6 +564,7 @@ footer p {
     .skillset {
       padding-right: 30px;
     }
+
     #skill1 #skill2 {
       font-family: "Poiret One", serif;
       font-size: 0.75em;
@@ -592,17 +587,17 @@ footer p {
       height: 200px;
       padding-left: 130px;
     }
-    .skillset .content-wrapper {
-      padding-right: 90px;
-    }
-
+ 
     .row .column {
       display: table-cell;
       vertical-align: middle;
       float: none;
-      width: 50%;
+      width: 79%;
     }
-
+    .row{
+      padding-right:100px;
+    }
+  
     .features {
       background-color: #f4ffa9;
       display: flex;
@@ -1113,12 +1108,19 @@ footer p {
     display: table;
     clear: both;
   }
+  .skillset {
+    padding-left: 140px;
+    padding-right: 140px;
   aside h2 {
     margin-bottom: 20px;
     color: #000;
     font-size: 3em;
     width: 100%;
     text-wrap: wrap;
+  }
+
+  .skill-header{
+    padding-left: 50px;
   }
 
   aside div {
