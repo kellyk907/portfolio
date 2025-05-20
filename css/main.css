@@ -342,22 +342,30 @@ p {
 .skillz {
   margin-top: -20px;
   margin-bottom: -20px;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -15px;
+  margin-right: -30px;
   padding-right: 20px;
   padding-bottom: 15px;
+  width: 100%;
 }
 
 .skillz .header {
   background-color: #effe8b;
   margin-top: -20px;
+  margin-left: -5px;
   font-size: 1em;
   padding-bottom: 5px;
   padding-top: 40px;
+  padding-left: 300px;
+}
+.skillz .row {
+  margin-left: -5px;
 }
 
 .sheader {
   background-color: #effe8b;
+  padding-left: 76px;
+  padding-top: 80px;
 }
 .set1 {
   display: grid;
@@ -1019,7 +1027,19 @@ body {
   }
   .skillz {
     margin-left: -20px;
-    max-width: 2200px;
+    max-width: 1300px;
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+  .row h3 {
+    font-size: 2em;
+    width: 30%;
+  }
+  .header h4 {
+    font-size: 3em;
+  }
+  .skillz .header {
+    padding-left: 500px;
   }
 }
 /* ==========================================================================
