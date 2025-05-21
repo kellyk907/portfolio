@@ -178,7 +178,7 @@ h2 {
   font-family: "La Belle Aurore", serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 3em;
   color: #000;
   line-height: 1em;
   text-align: center;
@@ -433,9 +433,12 @@ address {
 }
 .copyright {
   background-color: #effe8b;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
 }
-
+.footer a {
+  padding-right: 30px;
+}
 .center,
 .content {
   position: absolute;
@@ -480,21 +483,33 @@ header nav ul li {
   font-size: 0.45em;
   word-spacing: 30px;
 }
+
 .reviews {
   display: grid;
+  grid-template-areas:
+    "header header"
+    "about";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background-color: #f4ffa9;
+  padding: 55px;
 }
-.reviews p {
-  font-size: 1.25em;
+.reviews > div {
+  background-color: #f4ffa9;
+  padding: 10px;
 }
-.reviews img {
-  object-fit: contain;
-  scale: 65%;
+.reviews > div.header {
+  grid-area: header;
+  text-align: center;
 }
 
-.write {
-  font-family: "Poiret One", serif;
-  font-size: 1.5em;
-  font-weight: 500;
+.reviews > div.about {
+  grid-area: about;
+  text-wrap: wrap;
+  background-color: #effe8b;
+}
+.header {
+  background-color: #effe8b;
 }
 body {
   margin: 0;
@@ -663,32 +678,16 @@ body {
       color: #000;
     }
 
-    .reviews p {
-      color: #000;
-      padding: 10px;
-      float: left;
-    }
-
     .reviews h2 {
       margin-bottom: 40px;
       line-height: 1;
       font-family: "La Belle Aurore", serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 3.5em;
+      font-size: 2em;
       color: #000;
     }
 
-    .reviews img {
-      object-fit: contain;
-      display: flex;
-      justify-content: center;
-      border-radius: 8px;
-    }
-
-    .write p {
-      font-size: 1em;
-    }
     .footer {
       padding-left: 130px;
     }
@@ -887,24 +886,6 @@ body {
 
         .features i {
           margin-bottom: 30px;
-        }
-
-        .reviews article {
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .reviews h2 {
-          width: 85%;
-        }
-
-        .reviews article div {
-          width: 49%;
-        }
-
-        .reviews h3 {
-          width: 75%;
-          margin: 0;
         }
       }
     }
