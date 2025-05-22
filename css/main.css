@@ -835,20 +835,26 @@ body {
       .form-description aside .content-wrapper .form {
         width: 40%;
       }
+      /* Responsive layout - makes a one column-layout instead of two-column layout */
+      @media (max-width: 800px) {
+        .features {
+          flex-direction: column;
+        }
+        .features article {
+          display: flex;
+          align-items: center;
+          flex-flow: column wrap;
+          flex-basis: 50%;
+          padding: 15px;
+        }
 
-      .features article {
-        display: flex;
-        align-items: center;
-        flex-flow: column wrap;
-        flex-basis: 50%;
-      }
+        .features .features-item-description {
+          width: 100%;
+        }
 
-      .features .features-item-description {
-        width: 100%;
-      }
-
-      .features i {
-        margin-bottom: 30px;
+        .features i {
+          margin-bottom: 30px;
+        }
       }
     }
   }
