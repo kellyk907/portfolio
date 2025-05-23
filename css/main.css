@@ -523,13 +523,18 @@ body {
       line-height: 1.2;
       text-align: center;
     }
-
+    .hero-area {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     .hero-area h2 {
       padding: 20px;
     }
 
     .hero-area img {
       transform: scale(0.75);
+      vertical-align: top;
     }
 
     h2 {
@@ -666,7 +671,17 @@ body {
       padding-right: 80px;
       width: 85%;
     }
-
+    .footer .row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 767px) {
+      /* Your mobile-specific styles here */
+      .footer .row {
+        font-size: 25px;
+      }
+    }
     .copyright p {
       width: 100%;
       justify-content: center;
@@ -814,10 +829,6 @@ body {
         color: #f4ffa9;
       }
 
-      .hero-area {
-        min-height: 600px;
-      }
-
       .hero-area h1 {
         font-size: 3em;
         line-height: 1;
@@ -836,7 +847,7 @@ body {
         width: 40%;
       }
       /* Responsive layout - makes a one column-layout instead of two-column layout */
-      @media (max-width: 800px) {
+      @media (max-width: 700px) {
         .features {
           flex-direction: column;
         }
