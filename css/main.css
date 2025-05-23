@@ -834,7 +834,9 @@ body {
         line-height: 1;
         margin: 0;
       }
-
+      .footer .row {
+        font-size: 30px;
+      }
       aside .content-wrapper {
         margin: 50px 0;
         display: flex;
